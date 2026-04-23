@@ -14,6 +14,18 @@ public class Dealer {
 		generarNaipe();
 	}
 
+	
+	public ArrayList<Carta> getNaipe() {
+		return naipe;
+	}
+
+
+	public void setNaipe(ArrayList<Carta> naipe) {
+		this.naipe = naipe;
+	}
+
+
+
 	public void generarNaipe() {
 		
 		ArrayList<String> palos = new ArrayList<>();
@@ -44,4 +56,11 @@ public class Dealer {
 		double aleatorio=Math.random()*(maximo+1);
 		return (int)aleatorio;
 	}
+	
+	public Carta entregarCarta() {
+		int numCarta = generarAleatorio(naipe.size());
+		Carta carta = naipe.get(numCarta);
+		naipe.remove(numCarta);
+		return carta;
+}
 }
