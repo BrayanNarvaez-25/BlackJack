@@ -32,11 +32,7 @@ public class Carta {
 	}
 	
 	public void imprimir() {
-		String mensaje = "----CARTA----" +
-				"\nValor: "+valor
-				+"\nValor Juego: "+valorJuego
-				+"\nPalo: "+palo
-				+"---------------------------";
+		String mensaje = valor + " - " + palo +", Valor Juego: "+ 0;
 		System.out.println(mensaje);
 	}
 	
