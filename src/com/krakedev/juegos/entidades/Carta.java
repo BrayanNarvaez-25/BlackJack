@@ -5,6 +5,13 @@ public class Carta {
 	private int valorJuego;
 	private String palo;
 	
+	
+	
+	public Carta(String valor, String palo) {
+		super();
+		this.valor = valor;
+		this.palo = palo;
+	}
 	public String getValor() {
 		return valor;
 	}
