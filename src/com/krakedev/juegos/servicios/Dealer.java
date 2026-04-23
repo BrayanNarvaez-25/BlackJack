@@ -38,4 +38,10 @@ public class Dealer {
 			carta.imprimir();
 		}
 	}
+	
+	// En la clase Dealer
+	public int generarAleatorio(int maximo) {
+		double aleatorio=Math.random()*(maximo+1);
+		return (int)aleatorio;
+	}
 }
