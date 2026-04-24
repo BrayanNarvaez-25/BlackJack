@@ -57,6 +57,17 @@ public class Juego21 {
 		for(Jugador jugador : jugadores) {
 			repartirCarta(jugador);
 		}
+		calcularTotal();
+	}
+	
+	public void calcularTotal() {
+		for(Jugador jugador : jugadores) {
+			int totalCartas = 0;
+			for(Carta carta : jugador.getCartas()) {
+				totalCartas += carta.getValorJuego();
+			}
+			jugador.setPuntajeCartas(totalCartas);
+		}
 	}
 	
 }
